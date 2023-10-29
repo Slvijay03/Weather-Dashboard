@@ -13,6 +13,7 @@
 
 **NOTE :**
 
-     To get access to geographical locations use need to get weather API key ---> https://openweathermap.org/api 
+     To get access to geographical locations use need to get weather API key ---> 
+     https://openweathermap.org
      Logon to openweather website and get access to API key.
 
