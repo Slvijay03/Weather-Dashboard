@@ -11,9 +11,4 @@
    2. CSS
    3. java-script
 
-**NOTE :**
-
-     To get access to geographical locations use need to get weather API key ---> 
-     https://www.openweathermap.org
-     Logon to openweather website and get access to API key.
-
+https://openweathermap.org/api  ---> get API key here..
