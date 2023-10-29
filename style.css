@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:cursive;
+}
+body{
+    background: #2b3b46;
+    background-image: url(day/lake_forest.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+footer{
+    text-align: center;
+    background: #98c23f;
+    padding: 10px 0;
+    opacity: 0.7;
+}
+h1{
+    color: #3f3d3d;
+    padding: 18px 0;
+    text-align: center;
+    font-size: 1.75rem;
+    background: #98c23f;
+    opacity: 0.9;
+}
+.container {
+    display: flex;
+    gap: 35px;
+    padding: 30px;
+}
+.weather-input {
+    width: 550px;
+}
+.weather-input input {
+    width: 100%;
+    height: 46px;
+    outline: none;
+    padding: 0 15px;
+    margin: 10px 0 15px 0;
+    font-size: 1.07rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: #f1f0e5;
+    opacity: 0.8;
+}
+.weather-input .separator {
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background: #c1d4d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weather-input .separator::before {
+    content: "or";
+    color: #302f2f;
+    font-size: 1.18rem; 
+    padding: 0.15px;
+    margin-top: -4px;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+.weather-input button {
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #3f3d3d;
+    font-size: 1rem;
+    border-radius: 5px;
+    background: #98c23f;
+}
+.weather-input .location-btn {
+    background: #6c757d; 
+}
+.weather-data {
+    width: 100%;
+}
+.current-weather {
+    color: #3f3d3d;
+    background: #98c23f;
+    display: flex;
+    border-radius: 8px;
+    padding: 20px 70px 20px 20px;
+    justify-content: space-between;
+    opacity: 0.8;
+    
+}
+.current-weather h2 {
+    font-size: 1.7rem;
+}
+.current-weather h4 {
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.current-weather .icon {
+    text-align: center;  
+}
+.current-weather .icon img {
+    max-width: 120px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.current-weather .icon h4 {
+    margin-top: -10px;
+    text-transform:capitalize;
+}
+.days-forecast h2 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+.weather-cards {
+    display: flex;  
+    gap: 20px;
+    opacity: 0.6;
+}
+.weather-cards .card {
+    background: #dbe8d2;
+    color: #2f2d2d;
+    padding: 18px 16px;
+    border-radius: 7px;
+    list-style: none;
+    width: calc(100% / 0);
+}
+.weather-cards .card img {
+    max-width: 70px;
+    margin: 5px 0 -12px 0;
+}
+.weather-input button:hover{
+    background-color:#98c23f;
+    transform: scale(1.15);
+}
+.weather-input  .location-btn:hover{
+    background-color:#6c757d;
+    transform: scale(1.15);
+}
+
+@media (max-width: 1400px) {
+    .weather-data .current-weather {
+        padding: 20px;
+    }
+    .weather-cards {
+        flex-wrap: wrap;
+    }
+    .weather-cards .card {
+        width: calc(100% / 4 - 15px);
+    }
+}
+@media (max-width: 1200px) {
+    .weather-cards .card {
+        width: calc(100% / 3 - 15px);
+    }
+}
+@media (max-width: 950px) {
+    .weather-input {
+        width: 450px;
+    }
+    .weather-cards .card {
+        width: calc(100% / 2 - 10px);
+    }
+}
+@media (max-width: 750px) {
+    .container {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .weather-input {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .weather-input button:hover{
+        transform: scale(1);
+    }
+}
